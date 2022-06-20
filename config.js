@@ -9,6 +9,7 @@ import {
 
 export const meta = {
   name: "A-Barber",
+  instagram: "a.barber_tallinn",
 };
 
 export const navigation = [
@@ -20,13 +21,13 @@ export const navigation = [
 
 export const features = [
   {
-    name: "Juukselöikus - 45/60min",
+    name: "Juukselõikus - 45/60min",
     description:
       "Löikust teostatakse kääride ja masinate abil/ainult kääridega. Sisaldab juuksepesu ning juuste löppviimistlust professionaalsete toodete abil.",
     icon: CloudUploadIcon,
   },
   {
-    name: "Masinlôikus - 30/45min",
+    name: "Masinlõikus - 30/45min",
     description:
       "Teenuse broneerimiseks vali köigepealt teenuse ning seejarel salongi.",
     icon: LockClosedIcon,

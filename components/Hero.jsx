@@ -1,89 +1,98 @@
-import { ChevronRightIcon } from "@heroicons/react/solid";
+import { ClockIcon, MailOpenIcon } from "@heroicons/react/outline";
+import { StarIcon } from "@heroicons/react/solid";
 
 import Header from "./Header";
 
-const Hero = () => (
-  <div className="relative">
-    {/* Background Image */}
-    <div className="absolute inset-0">
-      <img className="object-cover w-full h-full" src="img/header-bg.jpg" />
-      <div className="absolute inset-0 bg-stone-500 mix-blend-multiply" />
-    </div>
+const BackgroundImage = () => (
+  <div className="absolute inset-0">
+    <picture>
+      <source srcset="img/header-bg.jpg" media="(min-width: 480px)" />
+      <img
+        srcset="img/header-bg-mobile.jpg"
+        className="object-cover w-full h-full"
+      />
+    </picture>
+    <div className="absolute inset-0 bg-stone-600 xs:bg-stone-500 mix-blend-multiply" />
+  </div>
+);
 
+const Pill = () => (
+  <span className="mb-6 inline-flex items-center px-3 uppercase tracking-wide font-semibold py-0.5 rounded-full text-sm bg-gradient-to-r from-gold-300 to-gold-500 text-gold-900">
+    Avamise eripakkumised!
+  </span>
+);
+
+const Title = () => (
+  <h1 className="pb-2 text-4xl font-bold tracking-tight text-white xs:text-5xl sm:text-6xl lg:text-7xl">
+    <span className="mr-3 text-transparent sm:mr-5 whitespace-nowrap bg-clip-text bg-gradient-to-r from-gold-300 to-gold-500">
+      A-Barber
+    </span>
+    <span>meeste juuksur Tallinnas</span>
+  </h1>
+);
+
+const Intro = () => (
+  <p className="mt-4 text-xl font-light text-stone-300">
+    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem
+    cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Id magna
+    aliqua ad ad non deserunt sunt.
+  </p>
+);
+
+const Divider = () => (
+  <div className="items-center hidden w-full my-10 space-x-3 opacity-50 sm:flex text-stone-400">
+    <div className="flex-1 h-2 border-t-2 border-b-2 border-stone-400" />
+    <StarIcon className="w-6 h-6" />
+    <StarIcon className="w-6 h-6" />
+    <StarIcon className="w-6 h-6" />
+    <div className="flex-1 h-2 border-t-2 border-b-2 border-stone-400" />
+  </div>
+);
+
+const BookingButton = () => (
+  <a
+    href="#"
+    className="flex items-center px-5 py-4 space-x-3 rounded-lg shadow bg-gradient-to-r from-gold-400 to-gold-500"
+  >
+    <ClockIcon className="w-7 h-7 text-gold-700" aria-hidden="true" />
+    <span className="text-xl font-medium whitespace-nowrap text-gold-900">
+      Broneeri aeg
+    </span>
+  </a>
+);
+
+const BookingEmail = () => (
+  <div className="flex items-center space-x-4 text-center sm:text-left">
+    <MailOpenIcon
+      className="hidden w-7 h-7 sm:block text-gold-200"
+      aria-hidden="true"
+    />
+
+    <div>
+      <span className="block text-sm font-semibold leading-none tracking-wider uppercase text-gold-500">
+        Või kirjuta meile
+      </span>
+      <span className="text-3xl text-white whitespace-nowrap">
+        info@a-barber.ee
+      </span>
+    </div>
+  </div>
+);
+
+const Hero = () => (
+  <div className="relative bg-black">
+    <BackgroundImage />
     <Header />
 
-    {/* Hero */}
-    <div className="relative pt-10 sm:pt-16 lg:pt-8 lg:pb-14">
-      <div className="mx-auto max-w-7xl lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-8">
-          <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 sm:text-center lg:px-0 lg:text-left lg:flex lg:items-center">
-            <div className="lg:py-24">
-              {/* Pill */}
-              <a
-                href="#"
-                className="inline-flex items-center px-2 py-1 text-white rounded-full bg-amber-900 lg:text-sm sm:text-base xl:text-base hover:text-stone-200"
-              >
-                <span className="text-sm">Vaata avamise eripakkumisi</span>
-
-                <ChevronRightIcon
-                  className="w-5 h-5 ml-1 text-stone-500"
-                  aria-hidden="true"
-                />
-              </a>
-
-              {/* H1 */}
-              <h1 className="mt-4 text-4xl font-bold tracking-tight text-white font-prompt sm:mt-5 sm:text-6xl lg:mt-6 xl:text-7xl">
-                <span className="mr-3 text-transparent whitespace-nowrap bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-400">
-                  A-Barber
-                </span>
-                <span className="pb-3 sm:pb-5">meeste juuksur Tallinnas</span>
-              </h1>
-
-              {/* Paragraph */}
-              <p className="mt-4 text-base text-stone-300 sm:text-xl lg:text-lg xl:text-xl">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat.
-              </p>
-
-              {/* Form */}
-              <div className="mt-10 sm:mt-12">
-                <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
-                  <div className="p-4 border rounded-xl sm:flex border-stone-400/50">
-                    {/* Email */}
-                    <div className="flex-1 min-w-0">
-                      <span className="block text-sm text-stone-400">
-                        Kirjuta meile
-                      </span>
-                      <span className="text-2xl text-white">
-                        booking@a-barber.ee
-                      </span>
-                    </div>
-
-                    {/* Button */}
-                    <div className="mt-3 sm:mt-0 sm:ml-3">
-                      <button
-                        type="submit"
-                        className="block w-full px-4 py-3 font-medium text-white rounded-md shadow bg-gradient-to-r from-amber-600 to-orange-800 hover:from-amber-700 hover:to-orange-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900"
-                      >
-                        Broneeri aeg internetis
-                      </button>
-                    </div>
-                  </div>
-
-                  {/* Footnote */}
-                  <p className="mt-3 text-sm text-stone-400 sm:mt-6">
-                    Start your free 14-day trial, no credit card necessary. By
-                    providing your email, you agree to our{" "}
-                    <a href="#" className="font-medium text-white">
-                      terms of service
-                    </a>
-                    .
-                  </p>
-                </form>
-              </div>
-            </div>
-          </div>
+    <div className="relative py-8 mx-auto max-w-7xl lg:px-8 sm:py-24 lg:py-24">
+      <div className="flex flex-col items-center max-w-md px-4 mx-auto text-center lg:mx-0 sm:max-w-2xl sm:px-6 lg:px-0 lg:text-left lg:items-start">
+        <Pill />
+        <Title />
+        <Intro />
+        <Divider />
+        <div className="flex flex-col items-center py-10 space-x-0 space-y-8 sm:py-0 sm:space-x-12 sm:space-y-0 sm:flex-row">
+          <BookingButton />
+          <BookingEmail />
         </div>
       </div>
     </div>

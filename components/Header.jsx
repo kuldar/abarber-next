@@ -3,146 +3,143 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 import { meta, navigation } from "../config";
+import {
+  EstFlag,
+  RuFlag,
+  FacebookIcon,
+  InstagramIcon,
+  LogoMark,
+  LogoText,
+} from "./Svg";
 
-// FB Icon
-const FacebookIcon = (props) => (
-  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" {...props}>
-    <path
-      fillRule="evenodd"
-      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-      clipRule="evenodd"
-    ></path>
-  </svg>
+// Logo
+const Logo = () => (
+  <a href="/" className="flex items-center text-white">
+    <LogoMark className="w-auto h-12" />
+    <LogoText className="ml-4 h-3.5 w-auto relative top-1 hidden lg:block" />
+  </a>
 );
 
-// IG Icon
-const InstagramIcon = (props) => (
-  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" {...props}>
-    <path
-      fillRule="evenodd"
-      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-      clipRule="evenodd"
-    ></path>
-  </svg>
+// Mobile Logo
+const MobileLogo = () => (
+  <div className="flex items-center">
+    <LogoMark className="w-auto h-10 mr-3" />
+    <LogoText className="relative w-auto h-3 top-1" />
+  </div>
 );
 
-// Logo Mark
-const LogoMark = (props) => (
-  <svg
-    width="81"
-    height="48"
-    viewBox="0 0 81 48"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
-    <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M58.9621 43.8049C58.6253 43.0405 58.4648 42.2103 58.5527 41.4015L52.0128 37.6323C51.3817 35.6154 50.6835 33.3951 49.9148 30.9518C48.8551 27.6001 47.9399 24.6891 47.1446 22.1522L80.6616 0C80.936 4.87949 73.7106 10.4627 53.0062 21.7658C65.0985 16.9767 71.0395 13.9093 78.9971 7.23393C79.1294 13.3274 72.4164 16.9559 54.2225 23.6223L54.6753 23.4961C63.9713 20.9051 69.3214 19.4139 76.7565 15.3001C75.3977 20.6454 70.0646 22.7965 55.6949 25.7349C64.2432 25.3162 67.6447 24.5674 71.8272 22.534C71.131 26.9632 66.0759 27.7825 55.1187 28.5516C55.5957 28.6362 56.0445 28.7198 56.4749 28.7999L56.475 28.7999C59.8024 29.4196 62.0344 29.8352 67.7301 28.9357C64.8794 33.449 61.2477 32.4783 55.5839 30.9644L55.5834 30.9642C55.0619 30.8249 54.5233 30.6809 53.9664 30.5362C56.6241 32.5456 58.5589 33.3629 62.9288 34.1851C60.7954 35.5311 57.6079 35.6194 52.6762 34.8101L59.4754 39.3039C60.2073 38.477 61.2603 38.0255 62.3686 37.9047C63.7251 37.7569 65.2365 38.0874 66.6098 38.8803C67.9831 39.6732 69.0251 40.8168 69.5753 42.0655C69.98 42.984 70.1302 43.9976 69.9007 44.9548C71.4475 45.6246 72.5676 45.5327 73.9182 44.9012C74.8286 44.5435 75.151 45.207 74.853 45.5499C72.949 47.1983 71.6253 47.3788 69.117 46.503C68.3834 47.3703 67.3052 47.8418 66.1689 47.9657C64.8123 48.1135 63.3009 47.783 61.9276 46.9901C60.5543 46.1972 59.5124 45.0536 58.9621 43.8049ZM22.2002 41.3532L28.3722 37.796L32.9796 21.7921L0.00749535 0C-0.26694 4.87949 6.9585 10.4627 27.6629 21.7658C15.5706 16.9767 9.62959 13.9093 1.67194 7.23393C1.53963 13.3274 8.25269 16.9559 26.4466 23.6223L25.9937 23.4961C16.6978 20.9051 11.3476 19.4139 3.91254 15.3001C5.27135 20.6454 10.6044 22.7965 24.9742 25.7349C16.4259 25.3162 13.0244 24.5674 8.84185 22.534C9.53808 26.9632 14.5931 27.7825 25.5503 28.5516C25.0735 28.6362 24.6248 28.7197 24.1944 28.7999L24.1942 28.7999L24.1941 28.7999C20.8666 29.4196 18.6347 29.8352 12.9389 28.9357C15.7896 33.449 19.4213 32.4783 25.0852 30.9644L25.0857 30.9642C25.6071 30.8249 26.1458 30.6809 26.7026 30.5362C24.045 32.5456 22.1102 33.3629 17.7402 34.1851C19.8737 35.5311 23.0612 35.6194 27.9929 34.8101L21.2498 39.2668C20.5194 38.4635 19.4815 38.0237 18.3899 37.9047C17.0334 37.7569 15.522 38.0874 14.1487 38.8803C12.7753 39.6732 11.7334 40.8168 11.1832 42.0655C10.6332 43.3135 10.5533 44.7371 11.2572 45.9562C11.961 47.1753 13.2339 47.8179 14.5896 47.9657C15.9461 48.1135 17.4575 47.783 18.8308 46.9901C20.2042 46.1972 21.2461 45.0536 21.7963 43.8049C22.1398 43.0253 22.3 42.1772 22.2002 41.3532ZM67.8386 44.9963C68.1626 44.435 68.1879 43.6781 67.8184 42.8397C67.4493 42.002 66.7073 41.1535 65.6499 40.543C64.5925 39.9325 63.4866 39.7141 62.5766 39.8133C61.6658 39.9126 61.0229 40.3129 60.6988 40.8741C60.3748 41.4354 60.3496 42.1923 60.719 43.0307C61.0881 43.8684 61.8302 44.7169 62.8876 45.3274C63.945 45.9379 65.0508 46.1563 65.9608 46.0571C66.8716 45.9578 67.5146 45.5575 67.8386 44.9963ZM12.94 42.8396C12.5706 43.678 12.5958 44.435 12.9199 44.9963C13.2439 45.5575 13.8868 45.9578 14.7976 46.0571C15.7076 46.1563 16.8135 45.9379 17.8709 45.3274C18.9283 44.7169 19.6703 43.8684 20.0394 43.0307C20.4089 42.1923 20.3837 41.4353 20.0596 40.8741C19.7356 40.3129 19.0926 39.9125 18.1819 39.8133C17.2719 39.7141 16.166 39.9325 15.1086 40.543C14.0512 41.1535 13.3092 42.002 12.94 42.8396ZM35.0006 43.8863H34.4726C32.3125 43.8863 31.4005 42.2879 32.3605 38.9134L33.8966 33.4078H43.8807L45.6567 39.4018C46.7127 42.9095 45.8007 43.8863 42.8727 43.8863V45.0407H50.9367L50.9369 45.0406H54.9566V43.8862H54.4766C52.7042 43.8862 51.3196 43.079 50.2699 40.7289C49.5196 38.1598 48.3451 34.4645 46.6647 29.1897C45.4165 25.2913 44.4693 22.2987 43.7323 19.9706L43.7323 19.9705L43.7322 19.97C42.0604 14.6885 41.471 12.8262 40.9046 11.5628L40.5206 11.2964H38.8406L30.7765 38.9578C29.6725 42.6875 28.0885 43.8863 25.9285 43.8863H25.4485V45.0407H35.0006V43.8863ZM43.4967 32.1646H34.2806L38.7446 16.1804L43.4967 32.1646Z"
-      fill="currentColor"
-    />
-  </svg>
+// Menu Open Button
+const MenuOpenButton = () => (
+  <Popover.Button className="inline-flex items-center justify-center p-2 rounded-md sm:hidden text-gold-900 bg-gold-400 hover:bg-gold-500">
+    <span className="sr-only">Ava menüü</span>
+    <MenuIcon className="w-6 h-6" aria-hidden="true" />
+  </Popover.Button>
 );
 
-// Logo Text
-const LogoText = (props) => (
-  <svg
-    width="130"
-    height="15"
-    viewBox="0 0 130 15"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
-    <path
-      d="M9.1 12.1C7.32 12.1 5.66 12.08 2.72 11.9C2.68 10.72 2.68 9.36 2.68 7.96C4.18 7.92 5.82 7.9 9.9 7.9C12.44 7.9 12.98 8.52 12.98 10.02C12.98 11.26 12.24 12.1 9.1 12.1ZM7.74 2.24C10.54 2.24 11.76 2.74 11.76 4.5C11.76 5.32 11.36 6.2 9.88 6.2C8 6.2 4.96 6.22 2.68 6.34C2.7 5 2.72 3.62 2.74 2.3C4.96 2.24 5.66 2.24 7.74 2.24ZM0 14.18C2.12 14.16 3.74 14.14 4.96 14.14C7.18 14.14 8.46 14.18 9.78 14.18C13.54 14.18 15.88 12.6 15.88 9.92C15.88 8.06 14.9 6.76 12.14 6.34C13.4 5.74 14.42 4.94 14.42 3.56C14.42 1.18 12.86 0.0200009 8.8 0.0200009C5.34 0.0200009 1.9 0.0800002 0 0.18C0.0600001 3.86 0.16 11.48 0 14.18Z"
-      fill="currentColor"
-    />
-    <path
-      d="M27.9106 0.18C25.0306 4.98 22.1306 9.66 19.1706 14.18H22.5506C23.0906 13.08 23.7106 11.88 24.3906 10.6C25.5906 10.54 27.4506 10.48 29.3106 10.48C31.1106 10.48 32.8706 10.52 34.0306 10.56C34.6306 11.74 35.2306 12.94 35.8506 14.18H39.3706C36.5306 9.66 33.7506 5.08 31.0306 0.18H27.9106ZM29.5306 8.54C28.1906 8.54 26.8706 8.52 25.5306 8.48C26.6506 6.46 27.9106 4.3 29.2306 2.04C30.5506 4.2 31.7706 6.32 32.9306 8.5C31.7906 8.52 30.6506 8.54 29.5306 8.54Z"
-      fill="currentColor"
-    />
-    <path
-      d="M51.4923 6.52C49.2923 6.52 47.6123 6.42 46.3723 6.32C46.3723 4.98 46.3923 3.62 46.4123 2.26C47.4723 2.22 48.9323 2.18 51.1723 2.16C53.9123 2.16 55.8923 2.58 55.8723 4.58C55.8723 6.16 54.2723 6.52 51.4923 6.52ZM51.0923 8.64H51.2123C53.9923 11.08 55.7323 12.94 57.0323 14.18H60.9723V13.78C58.2523 11.88 55.8323 9.56 54.3723 8.38C57.3123 7.84 58.7523 6.46 58.7523 4.46C58.7323 1.46 56.5123 0 51.3923 0C49.1123 0 45.6923 0.0800002 43.6523 0.18H43.6323C43.6723 2.5 43.6723 4.84 43.6723 7.18C43.6723 9.52 43.6723 11.84 43.6323 14.18H46.4523C46.4123 12.3 46.3923 10.44 46.3723 8.56C47.7923 8.6 50.0723 8.64 51.0923 8.64Z"
-      fill="currentColor"
-    />
-    <path
-      d="M75.8187 12.1C74.0387 12.1 72.3788 12.08 69.4388 11.9C69.3988 10.72 69.3988 9.36 69.3988 7.96C70.8988 7.92 72.5388 7.9 76.6188 7.9C79.1588 7.9 79.6988 8.52 79.6988 10.02C79.6988 11.26 78.9587 12.1 75.8187 12.1ZM74.4587 2.24C77.2587 2.24 78.4788 2.74 78.4788 4.5C78.4788 5.32 78.0787 6.2 76.5987 6.2C74.7187 6.2 71.6788 6.22 69.3988 6.34C69.4188 5 69.4387 3.62 69.4587 2.3C71.6787 2.24 72.3787 2.24 74.4587 2.24ZM66.7188 14.18C68.8388 14.16 70.4587 14.14 71.6787 14.14C73.8987 14.14 75.1787 14.18 76.4987 14.18C80.2587 14.18 82.5987 12.6 82.5987 9.92C82.5987 8.06 81.6187 6.76 78.8587 6.34C80.1187 5.74 81.1387 4.94 81.1387 3.56C81.1387 1.18 79.5788 0.0200009 75.5188 0.0200009C72.0588 0.0200009 68.6188 0.0800002 66.7188 0.18C66.7788 3.86 66.8788 11.48 66.7188 14.18Z"
-      fill="currentColor"
-    />
-    <path
-      d="M89.6094 14.18H105.349V11.68C100.669 11.84 96.6494 11.94 92.3894 11.96C92.3694 10.6 92.3494 9.22 92.3494 7.86C94.2094 7.86 97.8294 8.12 102.429 8.32V6H92.3494C92.3694 4.78 92.3694 3.58 92.3894 2.36C96.4094 2.3 99.9694 2.4 104.869 2.64V0.18H89.6094C89.6694 4.84 89.6694 9.52 89.6094 14.18Z"
-      fill="currentColor"
-    />
-    <path
-      d="M120.086 6.52C117.886 6.52 116.206 6.42 114.966 6.32C114.966 4.98 114.986 3.62 115.006 2.26C116.066 2.22 117.526 2.18 119.766 2.16C122.506 2.16 124.486 2.58 124.466 4.58C124.466 6.16 122.866 6.52 120.086 6.52ZM119.686 8.64H119.806C122.586 11.08 124.326 12.94 125.626 14.18H129.566V13.78C126.846 11.88 124.426 9.56 122.966 8.38C125.906 7.84 127.346 6.46 127.346 4.46C127.326 1.46 125.106 0 119.986 0C117.706 0 114.286 0.0800002 112.246 0.18H112.226C112.266 2.5 112.266 4.84 112.266 7.18C112.266 9.52 112.266 11.84 112.226 14.18H115.046C115.006 12.3 114.986 10.44 114.966 8.56C116.386 8.6 118.666 8.64 119.686 8.64Z"
-      fill="currentColor"
-    />
-  </svg>
+// Menu Close Button
+const MenuCloseButton = () => (
+  <div className="-mr-2">
+    <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600">
+      <span className="sr-only">Sulge menüü</span>
+      <XIcon className="w-6 h-6" aria-hidden="true" />
+    </Popover.Button>
+  </div>
 );
 
-export const social = [
-  { name: "Instagram", icon: <InstagramIcon />, href: "#" },
-  { name: "Facebook", icon: <FacebookIcon />, href: "#" },
-];
+// Header Menu
+const HeaderMenu = () => (
+  <div className="items-center justify-center flex-1 hidden space-x-8 sm:flex">
+    <a
+      href="#"
+      className="text-base font-medium text-white hover:text-gray-300"
+    >
+      Teenused
+    </a>
+    <a
+      href="#"
+      className="text-base font-medium text-white hover:text-gray-300"
+    >
+      Meist
+    </a>
+    <a
+      href="#"
+      className="text-base font-medium text-white hover:text-gray-300"
+    >
+      Kontakt
+    </a>
+  </div>
+);
+
+// Social Menu
+const SocialMenu = () => (
+  <div className="hidden sm:flex sm:items-center sm:space-x-5">
+    <a
+      href="#"
+      className="text-base font-medium text-white hover:text-gray-300"
+    >
+      <InstagramIcon />
+    </a>
+
+    <a
+      href="#"
+      className="text-base font-medium text-white hover:text-gray-300"
+    >
+      <FacebookIcon />
+    </a>
+
+    {/* <RuFlag className="w-6 h-6" /> */}
+    <EstFlag className="w-6 h-6" />
+  </div>
+);
+
+// Mobile Menu
+const MobileMenu = () => (
+  <div className="px-2 space-y-1">
+    <a
+      href="#"
+      className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+    >
+      Teenused
+    </a>
+    <a
+      href="#"
+      className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+    >
+      Meist
+    </a>
+    <a
+      href="#"
+      className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+    >
+      Kontakt
+    </a>
+  </div>
+);
+
+// Mobile Booking Button
+const MobileBookingButton = () => (
+  <div className="px-5 mt-4">
+    <a
+      href="#"
+      className="block w-full px-4 py-3 font-medium text-center rounded-md text-gold-900 bg-gradient-to-r from-gold-400 to-gold-500"
+    >
+      Broneeri aeg
+    </a>
+  </div>
+);
 
 const Header = () => (
   <Popover as="header" className="relative z-10">
-    {/* Main Header */}
-    <div className="pt-6">
+    {/* Desktop Header */}
+    <div className="py-6 bg-gradient-to-b from-black/80 to-black/0">
       <nav className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6">
-        {/* Logo */}
-        <div className="flex items-center justify-between w-full md:w-auto">
-          {/* Logo */}
-          <a href="#" className="flex items-center text-white">
-            <span className="sr-only">{meta.name}</span>
-            <LogoMark className="w-auto h-12 mr-4" />
-            <LogoText className="h-3.5 w-auto relative top-1" />
-          </a>
-
-          {/* Menu Toggle */}
-          <div className="flex items-center -mr-2 md:hidden">
-            <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-900 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white">
-              <span className="sr-only">Ava menüü</span>
-              <MenuIcon className="w-6 h-6" aria-hidden="true" />
-            </Popover.Button>
-          </div>
+        <div className="flex items-center justify-between w-full sm:w-auto">
+          <Logo />
+          <MenuOpenButton />
         </div>
 
-        {/* Nav */}
-        <div className="items-center justify-center flex-1 hidden space-x-8 md:flex md:ml-10">
-          {/* Nav Links */}
-          {navigation.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-base font-medium text-white hover:text-gray-300"
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
-
-        {/* CTA Links */}
-        <div className="hidden md:flex md:items-center md:space-x-6">
-          {/* Social Links */}
-          {social.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-base font-medium text-white hover:text-gray-300"
-            >
-              {item.icon}
-            </a>
-          ))}
-          <a
-            href="#"
-            className="px-4 py-2 font-medium text-white rounded-md shadow bg-gradient-to-r from-amber-600 to-orange-800 hover:from-amber-700 hover:to-orange-900"
-          >
-            Broneeri aeg
-          </a>
-        </div>
+        <HeaderMenu />
+        <SocialMenu />
       </nav>
     </div>
 
@@ -158,48 +155,17 @@ const Header = () => (
     >
       <Popover.Panel
         focus
-        className="absolute inset-x-0 top-0 p-2 transition origin-top transform md:hidden"
+        className="absolute inset-x-0 top-0 p-2 transition origin-top transform sm:hidden"
       >
         <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
           <div className="flex items-center justify-between px-5 pt-4">
-            {/* Logo */}
-            <div className="flex items-center">
-              <LogoMark className="w-auto h-10 mr-3" />
-              <LogoText className="relative w-auto h-3 top-1" />
-            </div>
-
-            {/* Menu Toggle */}
-            <div className="-mr-2">
-              <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600">
-                <span className="sr-only">Sulge menüü</span>
-                <XIcon className="w-6 h-6" aria-hidden="true" />
-              </Popover.Button>
-            </div>
+            <MobileLogo />
+            <MenuCloseButton />
           </div>
 
           <div className="pt-5 pb-6">
-            {/* Links */}
-            <div className="px-2 space-y-1">
-              {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
-
-            {/* Button */}
-            <div className="px-5 mt-6">
-              <a
-                href="#"
-                className="block w-full px-4 py-3 font-medium text-center text-white rounded-md shadow bg-gradient-to-r from-amber-600 to-orange-800 hover:from-amber-700 hover:to-orange-900"
-              >
-                Broneeri aeg
-              </a>
-            </div>
+            <MobileMenu />
+            <MobileBookingButton />
           </div>
         </div>
       </Popover.Panel>
