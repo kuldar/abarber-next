@@ -6,9 +6,9 @@ import Header from "./Header";
 const BackgroundImage = () => (
   <div className="absolute inset-0">
     <picture>
-      <source srcset="img/header-bg.jpg" media="(min-width: 480px)" />
+      <source srcSet="img/header-bg.jpg" media="(min-width: 480px)" />
       <img
-        srcset="img/header-bg-mobile.jpg"
+        srcSet="img/header-bg-mobile.jpg"
         className="object-cover w-full h-full"
       />
     </picture>

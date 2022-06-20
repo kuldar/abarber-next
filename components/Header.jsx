@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
+import LanguagePicker from "./LanguagePicker";
 import { meta, navigation } from "../config";
 import {
   EstFlag,
@@ -87,8 +88,28 @@ const SocialMenu = () => (
       <FacebookIcon />
     </a>
 
-    {/* <RuFlag className="w-6 h-6" /> */}
-    <EstFlag className="w-6 h-6" />
+    <LanguagePicker />
+  </div>
+);
+
+// Mobile Social Menu
+const MobileSocialMenu = () => (
+  <div className="flex items-center space-x-5 sm:hidden">
+    <a
+      href="#"
+      className="text-base font-medium text-white hover:text-gray-300"
+    >
+      <InstagramIcon />
+    </a>
+
+    <a
+      href="#"
+      className="text-base font-medium text-white hover:text-gray-300"
+    >
+      <FacebookIcon />
+    </a>
+
+    <LanguagePicker />
   </div>
 );
 
@@ -135,6 +156,7 @@ const Header = () => (
       <nav className="relative flex items-center justify-between px-4 mx-auto max-w-7xl sm:px-6">
         <div className="flex items-center justify-between w-full sm:w-auto">
           <Logo />
+          <MobileSocialMenu />
           <MenuOpenButton />
         </div>
 
@@ -172,4 +194,5 @@ const Header = () => (
     </Transition>
   </Popover>
 );
+
 export default Header;
