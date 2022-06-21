@@ -8,10 +8,10 @@ const Service = ({ name, duration, cost, url }) => (
   <div className="flex items-center space-x-4">
     <span className="flex-1 text-2xl font-medium leading-none">{name}</span>
 
-    <div className="flex items-center space-x-2 font-base">
-      <span className="text-xl">{duration} min</span>
-      <span className="text-xl opacity-30">/</span>
-      <span className="text-xl">{cost} €</span>
+    <div className="flex items-center space-x-2 text-xl text-stone-500 font-base">
+      <span>{duration} min</span>
+      <span className="opacity-40">/</span>
+      <span>{cost} €</span>
     </div>
 
     <a
@@ -31,39 +31,30 @@ const ServicesTitle = ({ title }) => (
   </div>
 );
 
+const FeaturedService = ({ name }) => (
+  <div className="px-4 text-center rounded-lg bg-stone-900">
+    <img
+      className="-mt-4 rounded-md shadow-md"
+      src="/img/service-illustration-1.jpg"
+      alt={name}
+    />
+    <div className="p-4">
+      <h3 className="text-xl font-medium tracking-tight text-white">{name}</h3>
+      <p className="text-stone-600">lorem ipsum</p>
+    </div>
+  </div>
+);
+
 const Services = () => {
   return (
     <div className="relative py-16 bg-black sm:py-24 lg:py-32">
       <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         {/* Grid */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="px-6 py-8 text-center rounded-lg bg-stone-900">
-            <h3 className="text-xl font-medium tracking-tight text-white">
-              Klassikaline lõikus
-            </h3>
-            <p className="text-stone-600">lorem ipsum</p>
-          </div>
-
-          <div className="px-6 py-8 text-center rounded-lg bg-stone-900">
-            <h3 className="text-xl font-medium tracking-tight text-white">
-              Juukselõikus & habeme kujundamine trimmeriga
-            </h3>
-            <p className="text-stone-600">lorem ipsum</p>
-          </div>
-
-          <div className="px-6 py-8 text-center rounded-lg bg-stone-900">
-            <h3 className="text-xl font-medium tracking-tight text-white">
-              Habeme modelleerimine trimmeriga
-            </h3>
-            <p className="text-stone-600">lorem ipsum</p>
-          </div>
-
-          <div className="px-6 py-8 text-center rounded-lg bg-stone-900">
-            <h3 className="text-xl font-medium tracking-tight text-white">
-              Isa koos lapsega kuni 12a.
-            </h3>
-            <p className="text-stone-600">lorem ipsum</p>
-          </div>
+          <FeaturedService name="Klassikaline lõikus" />
+          <FeaturedService name="Juukselõikus & habeme kujundamine trimmeriga" />
+          <FeaturedService name="Habeme modelleerimine trimmeriga" />
+          <FeaturedService name="Isa koos lapsega kuni 12a." />
         </div>
 
         {/* Services List */}
