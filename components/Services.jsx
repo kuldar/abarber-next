@@ -1,4 +1,4 @@
-import { PlusSmIcon, ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon } from "@heroicons/react/solid";
 import { SmallLogoMark } from "./Svg.jsx";
 
 const Divider = () => (

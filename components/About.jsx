@@ -7,21 +7,26 @@ import { Signature } from "./Svg";
 
 const About = () => {
   return (
-    <div
-      className="flex flex-col bg-center bg-cover"
-      style={{ backgroundImage: "url('img/about-bg.jpg')" }}
-    >
+    <div className="relative flex flex-col pb-14">
+      <div className="absolute inset-0">
+        <picture>
+          <source srcSet="img/about-bg.jpg" media="(min-width: 900px)" />
+          <img
+            srcSet="img/about-bg-mobile.jpg"
+            className="object-cover w-full h-full"
+          />
+        </picture>
+      </div>
       <div className="relative flex flex-col items-center px-8 md:items-start md:flex-row lg:mx-auto lg:max-w-7xl">
         <img
-          className="object-cover h-full rounded-xl -mt-14 w-80 max-h-[320px] md:max-h-[450px]"
+          className="-rotate-2 object-cover h-full rounded-xl -mt-14 w-80 max-h-[320px] md:max-h-[450px]"
           src="img/headshot.jpg"
           alt="Albina Kalvik"
         />
 
         <div className="flex-1 pt-16 pl-0 text-center md:text-left md:pl-16">
-          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white">
-            Duis id vulputate urna,
-            <br /> bibendum ornare eu risus.
+          <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight text-white max-w-2xl">
+            Duis id vulputate urna, diam bibendum ornare eu risus.
           </h2>
 
           <p className="mt-6 text-xl font-light leading-8 text-stone-300">
