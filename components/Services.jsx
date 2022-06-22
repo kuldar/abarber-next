@@ -1,3 +1,4 @@
+import { PlusSmIcon, ArrowRightIcon } from "@heroicons/react/solid";
 import { SmallLogoMark } from "./Svg.jsx";
 
 const Divider = () => (
@@ -8,7 +9,7 @@ const Service = ({ name, duration, cost, url }) => (
   <div className="flex items-center space-x-4">
     <span className="flex-1 text-2xl font-medium leading-none">{name}</span>
 
-    <div className="flex items-center space-x-2 text-xl text-stone-500 font-base">
+    <div className="flex items-center space-x-2 text-xl text-stone-400 font-base">
       <span>{duration} min</span>
       <span className="opacity-40">/</span>
       <span>{cost} €</span>
@@ -31,30 +32,61 @@ const ServicesTitle = ({ title }) => (
   </div>
 );
 
-const FeaturedService = ({ name }) => (
-  <div className="px-4 text-center rounded-lg bg-stone-900">
-    <img
-      className="-mt-4 rounded-md shadow-md"
-      src="/img/service-illustration-1.jpg"
-      alt={name}
-    />
-    <div className="p-4">
-      <h3 className="text-xl font-medium tracking-tight text-white">{name}</h3>
-      <p className="text-stone-600">lorem ipsum</p>
+const FeaturedService = ({ name, duration, cost, url }) => (
+  <div className="relative h-64 p-6 overflow-hidden rounded-xl">
+    <div className="absolute inset-0">
+      <img
+        src="img/service-illustration-1.jpg"
+        className="object-cover w-full h-full"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-stone-600 to-stone-200 mix-blend-multiply" />
+    </div>
+
+    <div className="relative flex flex-row items-end h-full sm:flex-col-reverse lg:flex-row">
+      <div className="flex-1 sm:flex-0 lg:flex-1">
+        <h3 className="text-2xl font-medium leading-none text-white">{name}</h3>
+        <div className="flex items-center space-x-2 text-xl text-stone-400 font-base">
+          <span>{duration} min</span>
+          <span className="opacity-40">/</span>
+          <span>{cost} €</span>
+        </div>
+      </div>
+
+      <div className="hidden sm:block sm:flex-1 lg:hidden" />
+      <a
+        href={url}
+        className="ml-2 inline-flex items-center p-1.5 border border-transparent rounded-full shadow-sm text-gold-900 bg-gradient-to-r from-gold-400 to-gold-500 hover:bg-gold-400"
+      >
+        <ArrowRightIcon className="w-6 h-6" aria-hidden="true" />
+      </a>
     </div>
   </div>
 );
 
 const Services = () => {
   return (
-    <div className="relative py-16 bg-black sm:py-24 lg:py-32">
-      <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
-        {/* Grid */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <FeaturedService name="Klassikaline lõikus" />
-          <FeaturedService name="Juukselõikus & habeme kujundamine trimmeriga" />
-          <FeaturedService name="Habeme modelleerimine trimmeriga" />
-          <FeaturedService name="Isa koos lapsega kuni 12a." />
+    <div className="pb-16 bg-black sm:pb-24 lg:pb-32">
+      <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+        {/* Featured Services */}
+        <div className="grid grid-cols-1 gap-8 -mt-14 sm:grid-cols-3 lg:grid-cols-3">
+          <FeaturedService
+            name="Klassikaline lõikus"
+            duration={45}
+            cost={22}
+            url="#"
+          />
+          <FeaturedService
+            name="Juukselõikus & habeme kujundamine trimmeriga"
+            duration={90}
+            cost={36}
+            url="#"
+          />
+          <FeaturedService
+            name="Habeme modelleerimine noaga"
+            duration={90}
+            cost={24}
+            url="#"
+          />
         </div>
 
         {/* Services List */}
