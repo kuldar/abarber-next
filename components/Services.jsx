@@ -6,10 +6,10 @@ const Divider = () => (
 );
 
 const Service = ({ name, duration, cost, url }) => (
-  <div className="flex items-center space-x-4">
+  <div className="flex items-center">
     <span className="flex-1 text-2xl font-medium leading-none">{name}</span>
 
-    <div className="flex items-center space-x-2 text-xl text-stone-400 font-base">
+    <div className="flex items-center mx-6 space-x-2 text-xl text-stone-400 font-base">
       <span>{duration} min</span>
       <span className="opacity-40">/</span>
       <span>{cost} €</span>
@@ -32,26 +32,22 @@ const ServicesTitle = ({ title }) => (
   </div>
 );
 
-const FeaturedService = ({ name, duration, cost, url }) => (
+const FeaturedService = ({ name, duration, cost, url, image }) => (
   <div className="relative h-64 p-6 overflow-hidden rounded-xl">
     <div className="absolute inset-0">
-      <img
-        src="img/service-illustration-1.jpg"
-        className="object-cover w-full h-full"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-stone-600 to-stone-200 mix-blend-multiply" />
+      <img src={image} className="object-cover w-full h-full grayscale" />
+      <div className="absolute inset-0 bg-gradient-to-t from-stone-700 to-white mix-blend-multiply" />
     </div>
 
     <div className="relative flex flex-row items-end h-full sm:flex-col-reverse lg:flex-row">
       <div className="flex-1 sm:flex-0 lg:flex-1">
         <h3 className="text-2xl font-medium leading-none text-white">{name}</h3>
-        <div className="flex items-center space-x-2 text-xl text-stone-400 font-base">
+        <div className="flex items-center mt-3 space-x-2 text-xl leading-none text-stone-400 font-base">
           <span>{duration} min</span>
           <span className="opacity-40">/</span>
           <span>{cost} €</span>
         </div>
       </div>
-
       <div className="hidden sm:block sm:flex-1 lg:hidden" />
       <a
         href={url}
@@ -74,18 +70,21 @@ const Services = () => {
             duration={45}
             cost={22}
             url="#"
+            image="img/service-illustration-4.jpg"
           />
           <FeaturedService
             name="Juukselõikus & habeme kujundamine trimmeriga"
             duration={90}
             cost={36}
             url="#"
+            image="img/service-illustration-1.jpg"
           />
           <FeaturedService
-            name="Habeme modelleerimine noaga"
-            duration={90}
-            cost={24}
+            name="Habeme modelleerimine trimmeriga"
+            duration={45}
+            cost={18}
             url="#"
+            image="img/service-illustration-3.jpg"
           />
         </div>
 

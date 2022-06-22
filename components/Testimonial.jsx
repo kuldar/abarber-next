@@ -1,6 +1,6 @@
 const Testimonial = () => {
   return (
-    <section className="pt-3 pb-12 overflow-hidden bg-black md:pt-5 lg:pt-6 md:pb-20 lg:pb-24">
+    <section className="pb-12 overflow-hidden bg-black md:pb-20 lg:pb-24">
       <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="relative">
           <blockquote className="mt-10">

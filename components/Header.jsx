@@ -75,15 +75,17 @@ const HeaderMenu = () => (
 const SocialMenu = () => (
   <div className="hidden sm:flex sm:items-center sm:space-x-5">
     <a
-      href="#"
+      href="https://www.instagram.com/a.barber_tallinn/"
       className="text-base font-medium text-white hover:text-gray-300"
+      target="_blank"
     >
       <InstagramIcon />
     </a>
 
     <a
-      href="#"
+      href="https://www.facebook.com/abarber.ee"
       className="text-base font-medium text-white hover:text-gray-300"
+      target="_blank"
     >
       <FacebookIcon />
     </a>
@@ -96,15 +98,17 @@ const SocialMenu = () => (
 const MobileSocialMenu = () => (
   <div className="flex items-center space-x-5 sm:hidden">
     <a
-      href="#"
+      href="https://www.instagram.com/a.barber_tallinn/"
       className="text-base font-medium text-white hover:text-gray-300"
+      target="_blank"
     >
       <InstagramIcon />
     </a>
 
     <a
-      href="#"
+      href="https://www.facebook.com/abarber.ee"
       className="text-base font-medium text-white hover:text-gray-300"
+      target="_blank"
     >
       <FacebookIcon />
     </a>
