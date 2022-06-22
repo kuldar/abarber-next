@@ -1,44 +1,61 @@
+import {
+  AcademicCapIcon,
+  SparklesIcon,
+  BriefcaseIcon,
+} from "@heroicons/react/outline";
+import { Signature } from "./Svg";
+
 const About = () => {
   return (
-    <div className="pb-16 bg-gradient-to-r from-stone-800 to-stone-900 lg:pb-0 lg:z-10 lg:relative">
-      <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
-        <div className="relative lg:-my-8">
-          <div className="max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-            <div className="overflow-hidden shadow-xl aspect-w-10 aspect-h-6 rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full">
-              <img
-                className="object-cover lg:h-full lg:w-full"
-                src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                alt=""
-              />
-            </div>
-          </div>
+    <div
+      className="flex flex-col bg-center bg-cover"
+      style={{ backgroundImage: "url('img/about-bg.jpg')" }}
+    >
+      <div className="relative flex flex-col items-center px-8 md:items-start md:flex-row lg:mx-auto lg:max-w-7xl">
+        <img
+          className="object-cover h-full rounded-xl -mt-14 w-80 max-h-[320px] md:max-h-[450px]"
+          src="img/headshot.jpg"
+          alt="Albina Kalvik"
+        />
+
+        <div className="flex-1 pt-16 pl-0 text-center md:text-left md:pl-16">
+          <h2 className="text-4xl font-bold leading-[1.1] tracking-tight text-white">
+            Duis id vulputate urna,
+            <br /> bibendum ornare eu risus.
+          </h2>
+
+          <p className="mt-6 text-xl font-light leading-8 text-stone-300">
+            Vestibulum massa metus, lobortis et rutrum at, aliquam convallis
+            erat. In hac habitasse platea dictumst. Proin ut mauris quis diam
+            ornare lobortis. Pellentesque tortor velit, ornare eu risus ut,
+            porta tincidunt tellus. Duis id vulputate urna fringilla.
+          </p>
+
+          <Signature className="mx-auto mt-10 md:mx-0" />
         </div>
-        <div className="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-          <div className="max-w-md px-4 mx-auto sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
-            <blockquote>
-              <div>
-                <p className="mt-6 text-lg font-light text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  urna nulla vitae laoreet augue. Amet feugiat est integer dolor
-                  auctor adipiscing nunc urna, sit.
-                </p>
-                <p className="mt-6 text-lg font-light text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  urna nulla vitae laoreet augue. Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit. Sed urna nulla vitae laoreet
-                  augue. Amet feugiat est integer dolor auctor adipiscing nunc
-                  urna, sit.
-                </p>
-              </div>
-              <footer className="mt-6">
-                <p className="text-base font-medium text-white">
-                  Albina Kalvik
-                </p>
-                <p className="text-base font-medium text-stone-500">
-                  Meeste juuksur
-                </p>
-              </footer>
-            </blockquote>
+      </div>
+
+      <div className="w-full px-8 lg:mx-auto lg:max-w-7xl mb-14">
+        <div className="w-full h-2 border-t-2 border-b-2 my-14 opacity-30 border-stone-500 lg:mx-auto lg:max-w-4xl" />
+
+        <div className="flex justify-center space-x-10">
+          <div className="flex items-center">
+            <AcademicCapIcon className="flex-shrink-0 w-6 h-6 mr-4 text-gold-600" />
+            <span className="text-xl font-light text-white">
+              Barberi eriala juuksurikoolis Maridel
+            </span>
+          </div>
+          <div className="flex items-center">
+            <SparklesIcon className="flex-shrink-0 w-6 h-6 mr-4 text-gold-600" />
+            <span className="text-xl font-light text-white">
+              Auhinnatud XYZ võistlustel
+            </span>
+          </div>
+          <div className="flex items-center">
+            <BriefcaseIcon className="flex-shrink-0 w-6 h-6 mr-4 text-gold-600" />
+            <span className="text-xl font-light text-white">
+              Iseseisvalt täiendõppinud
+            </span>
           </div>
         </div>
       </div>
