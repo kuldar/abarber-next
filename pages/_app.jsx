@@ -12,6 +12,7 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         />
+        <meta name="theme-color" content="#ff0000" />>
       </Head>
       <Component {...pageProps} />
     </div>
