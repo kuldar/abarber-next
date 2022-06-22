@@ -6,13 +6,15 @@ const Divider = () => (
 );
 
 const Service = ({ name, duration, cost, url }) => (
-  <div className="flex items-center">
-    <span className="flex-1 text-2xl font-medium leading-none">{name}</span>
+  <div className="flex flex-col items-start xs:items-center xs:flex-row">
+    <div className="flex flex-col items-start flex-1 sm:items-center sm:flex-row">
+      <span className="flex-1 text-2xl font-medium leading-none">{name}</span>
 
-    <div className="flex items-center mx-6 space-x-2 text-xl text-stone-400 font-base">
-      <span>{duration} min</span>
-      <span className="opacity-40">/</span>
-      <span>{cost} €</span>
+      <div className="flex items-center mx-0 my-2 mt-1 space-x-2 text-xl xs:my-0 sm:mt-0 sm:mx-6 text-stone-400 font-base">
+        <span>{duration} min</span>
+        <span className="opacity-40">/</span>
+        <span>{cost} €</span>
+      </div>
     </div>
 
     <a
@@ -27,7 +29,9 @@ const Service = ({ name, duration, cost, url }) => (
 const ServicesTitle = ({ title }) => (
   <div className="flex flex-col items-center mt-20 space-y-6">
     <SmallLogoMark />
-    <h2 className="text-4xl font-semibold text-white">{title}</h2>
+    <h2 className="text-4xl font-semibold leading-none text-center text-white">
+      {title}
+    </h2>
     <Divider />
   </div>
 );
@@ -89,10 +93,10 @@ const Services = () => {
         </div>
 
         {/* Services List */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-xs px-4 mx-auto xs:max-w-3xl xs:px-0">
           {/* Services Section */}
           <ServicesTitle title="Juukselõikus" />
-          <div className="flex flex-col mt-10 space-y-4 text-white">
+          <div className="flex flex-col mt-10 space-y-8 text-white xs:space-y-4">
             <Service
               name="Klassikaline lõikus"
               duration={45}
@@ -122,7 +126,7 @@ const Services = () => {
 
           {/* Services Section */}
           <ServicesTitle title="Habeme hooldus" />
-          <div className="flex flex-col mt-10 space-y-4 text-white">
+          <div className="flex flex-col mt-10 space-y-8 text-white xs:space-y-4">
             <Service
               name="Habeme modelleerimine trimmeriga"
               duration={45}
@@ -140,7 +144,7 @@ const Services = () => {
 
           {/* Services Section */}
           <ServicesTitle title="Eriteenused" />
-          <div className="flex flex-col mt-10 space-y-4 text-white">
+          <div className="flex flex-col mt-10 space-y-8 text-white xs:space-y-4">
             <Service
               name="Näodepilatsioon (nina + kõrvad)"
               duration={10}
