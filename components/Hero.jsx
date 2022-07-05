@@ -16,18 +16,18 @@ const BackgroundImage = () => (
   </div>
 );
 
-const Pill = () => (
+const Pill = ({ t }) => (
   <span className="mb-6 inline-flex items-center px-3 uppercase tracking-wide font-semibold py-0.5 rounded-full text-sm bg-gradient-to-r from-gold-300 to-gold-500 text-gold-900">
-    Avamise eripakkumised!
+    {t.hero.pill}
   </span>
 );
 
-const Title = () => (
+const Title = ({ t }) => (
   <h1 className="pb-2 text-4xl font-bold tracking-tight text-white xs:text-5xl sm:text-6xl lg:text-7xl">
     <span className="mr-3 text-transparent sm:mr-5 whitespace-nowrap bg-clip-text bg-gradient-to-r from-gold-300 to-gold-500">
-      A-Barber
+      {t.hero.h1[0]}
     </span>
-    <span>meeste juuksur Tallinnas</span>
+    <span>{t.hero.h1[1]}</span>
   </h1>
 );
 
@@ -79,16 +79,16 @@ const BookingEmail = () => (
   </div>
 );
 
-const Hero = () => (
+const Hero = ({ t }) => (
   <div className="relative bg-black">
     <BackgroundImage />
     <Header />
 
     <div className="relative pt-8 mx-auto pb-14 max-w-7xl lg:px-8 sm:pt-24 sm:pb-28 lg:pb-36">
       <div className="flex flex-col items-center max-w-md px-4 mx-auto text-center lg:mx-0 sm:max-w-2xl sm:px-6 lg:px-0 lg:text-left lg:items-start">
-        <Pill />
-        <Title />
-        <Intro />
+        <Pill t={t} />
+        <Title t={t} />
+        <Intro t={t} />
         <Divider />
         <div className="flex flex-col items-center py-10 space-x-0 space-y-8 sm:py-0 sm:space-x-12 sm:space-y-0 sm:flex-row">
           <BookingButton />

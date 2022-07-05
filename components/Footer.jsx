@@ -29,8 +29,9 @@ const Footer = () => {
       const marker = document.createElement("div");
       marker.className = "marker";
       marker.style.backgroundImage = "url('img/marker.svg')";
-      marker.style.width = "32px";
-      marker.style.height = "32px";
+      marker.style.width = "85px";
+      marker.style.height = "63px";
+      marker.style.top = "-20px"; // hmm..
 
       new mapboxgl.Marker(marker)
         .setLngLat({ lat: 59.36562513754081, lng: 24.656469969871132 })
