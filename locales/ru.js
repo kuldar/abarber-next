@@ -46,7 +46,7 @@ export default {
   seo: {
     title: "А-Барбэр мужской парикмахер в Таллинне",
     description:
-      "Natuke pikem kirjeldus A-Barber meeste juuksurist Tallinnas ja miks siin endale aeg broneerida. Ülevaade pakutavatest teenustest ning kogemusest.",
+      "Немного более подробное описание мужской парикмахерской A-Barber в Таллинне и почему вы должны записаться на прием здесь. Обзор предлагаемых услуг и опыта.",
     siteName: "А-Барбэр",
   },
 };
