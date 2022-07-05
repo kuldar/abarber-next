@@ -1,4 +1,5 @@
 export default {
+  locale: "en",
   header: {
     nav: [
       { id: "services", label: "Services" },
@@ -41,5 +42,11 @@ export default {
     howToComeLabel: "How to come",
     howToComeText:
       "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.",
+  },
+  seo: {
+    title: "A-Barber men's barber in Tallinn",
+    description:
+      "Natuke pikem kirjeldus A-Barber meeste juuksurist Tallinnas ja miks siin endale aeg broneerida. Ülevaade pakutavatest teenustest ning kogemusest.",
+    siteName: "A-Barber",
   },
 };

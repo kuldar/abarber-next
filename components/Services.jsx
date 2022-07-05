@@ -79,7 +79,7 @@ const Services = () => {
   const t = locale === "et" ? et : locale === "ru" ? ru : en;
 
   return (
-    <div className="pb-16 bg-black sm:pb-24 lg:pb-32">
+    <div className="pb-16 bg-black sm:pb-24 lg:pb-32" id={t.header.nav[0].id}>
       <div className="relative max-w-md px-4 mx-auto sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         {/* Featured Services */}
         <div className="grid grid-cols-1 gap-8 -mt-14 sm:grid-cols-3 lg:grid-cols-3">

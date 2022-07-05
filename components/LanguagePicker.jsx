@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { useRouter } from "next/router";
+import { useRouter, withRouter } from "next/router";
 import { Menu, Transition } from "@headlessui/react";
 
 import et from "../locales/et";
@@ -26,12 +26,12 @@ const locales = [
 
 const LanguagePicker = () => {
   const router = useRouter();
-  const { locale, pathname, asPath, query } = router;
+  const { locale } = router;
   const t = locale === "et" ? et : locale === "ru" ? ru : en;
 
   const changeLocale = (newLocale) => {
     document.cookie = `NEXT_LOCALE=${newLocale}`;
-    router.push({ pathname, query }, asPath, { locale: newLocale });
+    router.push("/", "/", { locale: newLocale });
   };
 
   return (

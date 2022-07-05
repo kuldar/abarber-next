@@ -1,4 +1,5 @@
 export default {
+  locale: "ru",
   header: {
     nav: [
       { id: "uslugi", label: "Услуги" },
@@ -41,5 +42,11 @@ export default {
     howToComeLabel: "Как прийти",
     howToComeText:
       "Ид нисл интерессет про. Но сеа атоморум персецути, цу еос дуис сцрипта ерудити. Фацете сусципит пертинациа ад яуо. Ан меи пертинах инимицус.",
+  },
+  seo: {
+    title: "А-Барбэр мужской парикмахер в Таллинне",
+    description:
+      "Natuke pikem kirjeldus A-Barber meeste juuksurist Tallinnas ja miks siin endale aeg broneerida. Ülevaade pakutavatest teenustest ning kogemusest.",
+    siteName: "А-Барбэр",
   },
 };

@@ -7,7 +7,7 @@ import { Signature } from "./Svg";
 
 const About = ({ t }) => {
   return (
-    <div className="relative flex flex-col pb-14">
+    <div className="relative flex flex-col pb-14" id={t.header.nav[1].id}>
       <div className="absolute inset-0">
         <picture>
           <source srcSet="img/about-bg.jpg" media="(min-width: 900px)" />
