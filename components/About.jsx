@@ -5,7 +5,7 @@ import {
 } from "@heroicons/react/outline";
 import { Signature } from "./Svg";
 
-const About = () => {
+const About = ({ t }) => {
   return (
     <div className="relative flex flex-col pb-14">
       <div className="absolute inset-0">
@@ -26,14 +26,11 @@ const About = () => {
 
         <div className="flex-1 pt-16 pl-0 text-center md:text-left md:pl-16">
           <h2 className="text-4xl font-semibold leading-[1.1] tracking-tight text-white max-w-2xl">
-            Duis id vulputate urna, diam bibendum ornare eu risus.
+            {t.about.headline}
           </h2>
 
           <p className="mt-6 text-xl font-light leading-8 text-stone-300">
-            Vestibulum massa metus, lobortis et rutrum at, aliquam convallis
-            erat. In hac habitasse platea dictumst. Proin ut mauris quis diam
-            ornare lobortis. Pellentesque tortor velit, ornare eu risus ut,
-            porta tincidunt tellus. Duis id vulputate urna fringilla.
+            {t.about.text}
           </p>
 
           <Signature className="mx-auto mt-10 md:mx-0" />
@@ -47,21 +44,21 @@ const About = () => {
           <div className="flex items-center">
             <AcademicCapIcon className="flex-shrink-0 w-6 h-6 mr-4 text-gold-600" />
             <span className="text-xl font-light text-white">
-              Barberi eriala juuksurikoolis Maridel
+              {t.about.bullets[0]}
             </span>
           </div>
 
           <div className="flex items-center">
             <SparklesIcon className="flex-shrink-0 w-6 h-6 mr-4 text-gold-600" />
             <span className="text-xl font-light text-white">
-              Auhinnatud XYZ võistlustel
+              {t.about.bullets[1]}
             </span>
           </div>
 
           <div className="flex items-center">
             <BriefcaseIcon className="flex-shrink-0 w-6 h-6 mr-4 text-gold-600" />
             <span className="text-xl font-light text-white">
-              Iseseisvalt täiendõppinud
+              {t.about.bullets[2]}
             </span>
           </div>
         </div>

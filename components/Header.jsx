@@ -8,15 +8,7 @@ import ru from "../locales/ru";
 import en from "../locales/en";
 
 import LanguagePicker from "./LanguagePicker";
-import { meta, navigation } from "../config";
-import {
-  EstFlag,
-  RuFlag,
-  FacebookIcon,
-  InstagramIcon,
-  LogoMark,
-  LogoText,
-} from "./Svg";
+import { FacebookIcon, InstagramIcon, LogoMark, LogoText } from "./Svg";
 
 // Logo
 const Logo = () => (
@@ -58,7 +50,7 @@ const HeaderMenu = ({ t }) => (
     {t.header.nav.map((link) => (
       <a
         href={`#${link.id}`}
-        className="text-base font-medium text-white hover:text-gray-300"
+        className="text-base text-white hover:text-gray-300"
       >
         {link.label}
       </a>
@@ -71,7 +63,7 @@ const SocialMenu = () => (
   <div className="hidden sm:flex sm:items-center sm:space-x-5">
     <a
       href="https://www.instagram.com/a.barber_tallinn/"
-      className="text-base font-medium text-white hover:text-gray-300"
+      className="text-base text-white hover:text-gray-300"
       target="_blank"
     >
       <InstagramIcon />
@@ -79,7 +71,7 @@ const SocialMenu = () => (
 
     <a
       href="https://www.facebook.com/abarber.ee"
-      className="text-base font-medium text-white hover:text-gray-300"
+      className="text-base text-white hover:text-gray-300"
       target="_blank"
     >
       <FacebookIcon />
@@ -94,7 +86,7 @@ const MobileSocialMenu = () => (
   <div className="flex items-center space-x-5 sm:hidden">
     <a
       href="https://www.instagram.com/a.barber_tallinn/"
-      className="text-base font-medium text-white hover:text-gray-300"
+      className="text-base text-white hover:text-gray-300"
       target="_blank"
     >
       <InstagramIcon />
@@ -102,7 +94,7 @@ const MobileSocialMenu = () => (
 
     <a
       href="https://www.facebook.com/abarber.ee"
-      className="text-base font-medium text-white hover:text-gray-300"
+      className="text-base text-white hover:text-gray-300"
       target="_blank"
     >
       <FacebookIcon />
@@ -118,7 +110,7 @@ const MobileMenu = ({ t }) => (
     {t.header.nav.map((link) => (
       <a
         href={`#${link.id}`}
-        className="block px-3 py-2 text-base font-medium text-gray-900 rounded-md hover:bg-gray-50"
+        className="block px-3 py-2 text-base text-gray-900 rounded-md hover:bg-gray-50"
       >
         {link.label}
       </a>
@@ -131,7 +123,7 @@ const MobileBookingButton = ({ t }) => (
   <div className="px-5 mt-4">
     <a
       href="#"
-      className="block w-full px-4 py-3 font-medium text-center rounded-md text-gold-900 bg-gradient-to-r from-gold-400 to-gold-500"
+      className="block w-full px-4 py-3 font-semibold text-center rounded-md text-gold-900 bg-gradient-to-r from-gold-400 to-gold-500"
     >
       {t.header.bookTime}
     </a>

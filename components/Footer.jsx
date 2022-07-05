@@ -7,7 +7,7 @@ import {
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-const Footer = () => {
+const Footer = ({ t }) => {
   const mapContainer = useRef(null);
   const map = useRef(null);
 
@@ -49,7 +49,7 @@ const Footer = () => {
                 <MailOpenIcon className="w-6 h-6 mr-4 md:w-8 md:h-8 text-gold-500" />
                 <div>
                   <div className="text-sm font-medium tracking-wider uppercase text-stone-400">
-                    Email
+                    {t.contact.email}
                   </div>
                   <div className="text-2xl">info@a-barber.ee</div>
                 </div>
@@ -59,7 +59,7 @@ const Footer = () => {
                 <MapIcon className="w-6 h-6 mr-4 md:w-8 md:h-8 text-gold-500" />
                 <div>
                   <div className="text-sm font-medium tracking-wider uppercase text-stone-400">
-                    Aadress
+                    {t.contact.address}
                   </div>
                   <div className="text-2xl">Lemmiku 34, Nõmme, Tallinn</div>
                 </div>
@@ -67,13 +67,11 @@ const Footer = () => {
 
               <div>
                 <div className="text-sm font-medium tracking-wider uppercase text-stone-400">
-                  Kuidas tulla
+                  {t.contact.howToComeLabel}
                 </div>
 
                 <div className="mt-1 text-lg leading-tight">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat.
+                  {t.contact.howToComeText}
                 </div>
               </div>
 

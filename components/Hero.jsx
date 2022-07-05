@@ -31,12 +31,8 @@ const Title = ({ t }) => (
   </h1>
 );
 
-const Intro = () => (
-  <p className="mt-4 text-xl font-light text-stone-300">
-    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem
-    cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Id magna
-    aliqua ad ad non deserunt sunt.
-  </p>
+const Intro = ({ t }) => (
+  <p className="mt-4 text-xl font-light text-stone-300">{t.hero.intro}</p>
 );
 
 const Divider = () => (
@@ -49,19 +45,19 @@ const Divider = () => (
   </div>
 );
 
-const BookingButton = () => (
+const BookingButton = ({ t }) => (
   <a
     href="#"
     className="flex items-center px-5 py-4 space-x-3 rounded-lg shadow bg-gradient-to-r from-gold-400 to-gold-500"
   >
     <ClockIcon className="w-7 h-7 text-gold-700" aria-hidden="true" />
     <span className="text-xl font-medium whitespace-nowrap text-gold-900">
-      Broneeri aeg
+      {t.hero.bookTime}
     </span>
   </a>
 );
 
-const BookingEmail = () => (
+const BookingEmail = ({ t }) => (
   <div className="flex items-center space-x-4 text-center sm:text-left">
     <MailOpenIcon
       className="hidden w-7 h-7 sm:block text-gold-200"
@@ -70,7 +66,7 @@ const BookingEmail = () => (
 
     <div>
       <span className="block text-sm font-semibold leading-none tracking-wider uppercase text-gold-500">
-        Või kirjuta meile
+        {t.hero.writeUs}
       </span>
       <span className="text-3xl text-white whitespace-nowrap">
         info@a-barber.ee
@@ -91,8 +87,8 @@ const Hero = ({ t }) => (
         <Intro t={t} />
         <Divider />
         <div className="flex flex-col items-center py-10 space-x-0 space-y-8 sm:py-0 sm:space-x-12 sm:space-y-0 sm:flex-row">
-          <BookingButton />
-          <BookingEmail />
+          <BookingButton t={t} />
+          <BookingEmail t={t} />
         </div>
       </div>
     </div>

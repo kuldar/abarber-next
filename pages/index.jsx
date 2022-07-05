@@ -17,7 +17,11 @@ export default function Home() {
   const t = locale === "et" ? et : locale === "ru" ? ru : en;
 
   return (
-    <div className="relative overflow-hidden bg-black font-prompt">
+    <div
+      className={`relative overflow-hidden bg-black ${
+        locale === "ru" ? "font-montserrat" : "font-prompt"
+      }`}
+    >
       <div className="relative z-10 mb-0 md:mb-[600px]">
         <Hero t={t} />
         <Services t={t} />
