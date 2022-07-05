@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-const domain = "https://a-barber.ee";
-const ogImage = "https://a-barber.ee/og.jpg";
+const domain = "https://abarber.vercel.app";
+const ogImage = "https://abarber.vercel.app/og.jpg";
 
 const Seo = ({ t }) => (
   <Head>
