@@ -15,7 +15,7 @@ export default {
     pill: "Avamise eripakkumised!",
     h1: ["A-Barber", "meeste juuksur Tallinnas"],
     intro:
-      "Anim? aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Id magna aliqua ad ad non deserunt sunt.",
+      "Kõik meie teenuse aspektid on loodud selleks, et tagada teile parim väljanägemine ja enesetunne. Meie tippklassi meeste juuksurid pakuvad elamust, mis sobib igale härrasmehele. Alates hetkest, kui uksest sisse astute, tunnete end koduselt. Sel ajal, kui saate end tasuta joogiga värskendada, arutab teie kvalifitseeritud juuksur teie nõudmisi ja pakub spetsiaalselt teie naha- ja juustevajadustele kohandatud konsultatsiooni.",
     bookTime: "Broneeri aeg",
     writeUs: "Või kirjuta meile",
   },
@@ -24,8 +24,8 @@ export default {
     min: "min",
   },
   testimonial: {
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
-    author: "Judith Black",
+    text: "Suurepärane juuksur, juuksurid on kõik väga head. Teenindus on suurepärane. Parkimine tasuta. Ma lõikan siin iga kuu juukseid. Väga soovitatav.",
+    author: "John Apple",
   },
   about: {
     headline: "Duis id vulputate urna, diam bibendum ornare eu risus.",
