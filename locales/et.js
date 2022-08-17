@@ -41,7 +41,7 @@ export default {
     address: "Aadress",
     howToComeLabel: "Kuidas tulla",
     howToComeText:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.",
+      "Asume keldrikorrusel, peauksest vasakul. Tasuta parkimine tänaval.",
   },
   seo: {
     title: "A-Barber meeste juuksur Tallinnas",
