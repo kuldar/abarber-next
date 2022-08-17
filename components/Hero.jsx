@@ -47,7 +47,7 @@ const Divider = () => (
 
 const BookingButton = ({ t }) => (
   <a
-    href="#"
+    href="https://www.fresha.com/a/a-barber-tallinn-lemmiku-34-c1l0dnu6/booking"
     className="flex items-center px-5 py-4 space-x-3 rounded-lg shadow bg-gradient-to-r from-gold-400 to-gold-500"
   >
     <ClockIcon className="w-7 h-7 text-gold-700" aria-hidden="true" />
