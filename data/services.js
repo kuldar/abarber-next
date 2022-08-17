@@ -130,7 +130,7 @@ export default {
           },
           duration: 10,
           price: 5,
-          link: "#",
+          link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194955&pId=672198",
         },
         {
           name: {
@@ -140,7 +140,7 @@ export default {
           },
           duration: 30,
           price: 15,
-          link: "#",
+          link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10710040&pId=672198",
         },
         {
           name: {
@@ -150,7 +150,7 @@ export default {
           },
           duration: 90,
           price: 35,
-          link: "#",
+          link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194896&pId=672198",
         },
         {
           name: {
@@ -160,7 +160,7 @@ export default {
           },
           duration: 180,
           price: 120,
-          link: "#",
+          link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10710052&pId=672198",
         },
       ],
     },
