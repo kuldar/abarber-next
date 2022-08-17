@@ -122,7 +122,7 @@ const MobileMenu = ({ t }) => (
 const MobileBookingButton = ({ t }) => (
   <div className="px-5 mt-4">
     <a
-      href="#"
+      href="https://www.fresha.com/a/a-barber-tallinn-lemmiku-34-c1l0dnu6/booking"
       className="block w-full px-4 py-3 font-semibold text-center rounded-md text-gold-900 bg-gradient-to-r from-gold-400 to-gold-500"
     >
       {t.header.bookTime}
