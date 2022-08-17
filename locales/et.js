@@ -15,7 +15,7 @@ export default {
     pill: "Avamise eripakkumised!",
     h1: ["A-Barber", "meeste juuksur Tallinnas"],
     intro:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Id magna aliqua ad ad non deserunt sunt.",
+      "Anim? aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Id magna aliqua ad ad non deserunt sunt.",
     bookTime: "Broneeri aeg",
     writeUs: "Või kirjuta meile",
   },
