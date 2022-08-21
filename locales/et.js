@@ -24,8 +24,8 @@ export default {
     min: "min",
   },
   testimonial: {
-    text: "Suurepärane juuksur, juuksurid on kõik väga head. Teenindus on suurepärane. Parkimine tasuta. Ma lõikan siin iga kuu juukseid. Väga soovitatav.",
-    author: "John Apple",
+    text: "Albina on üks parimaid juuksureid kus ma käinud olen. Peale juukselõikust, juuksemasaashi ja habeme piiramist tunnen end mitu aastat nooremana. Kiidan tema tööd väga!",
+    author: "Aivo Erm",
   },
   about: {
     headline: "Duis id vulputate urna, diam bibendum ornare eu risus.",
