@@ -12,7 +12,7 @@ const Testimonial = ({ t }) => {
                 <div className="flex-shrink-0">
                   <img
                     className="w-10 h-10 mx-auto rounded-full"
-                    src="https://i.ibb.co/JpcL0LN/jhgdf.jpg"
+                    src="https://i.ibb.co/QHJBzBZ/jhgdf.jpg"
                     alt={t.testimonial.author}
                   />
                 </div>
