@@ -12,7 +12,7 @@ const Testimonial = ({ t }) => {
                 <div className="flex-shrink-0">
                   <img
                     className="w-10 h-10 mx-auto rounded-full"
-                    src="https://scontent-hel3-1.cdninstagram.com/v/t51.2885-15/35459251_1927628440589217_3461974619622211584_n.jpg?stp=dst-jpg_e35&cb=2d435ae8-d7f9aae8&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_cat=109&_nc_ohc=Q6V-_m-jq1cAX8j_IE_&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MTgwODY1NDE1OTE0ODE4OTc1Mw%3D%3D.2-ccb7-5&oh=00_AT_OZbUCBT7bYQdFveDUkfFZhpT5nLooZyQ7Km4TiEQGyA&oe=6308DD65&_nc_sid=30a2ef"
+                    src="https://i.ibb.co/JpcL0LN/jhgdf.jpg"
                     alt={t.testimonial.author}
                   />
                 </div>
