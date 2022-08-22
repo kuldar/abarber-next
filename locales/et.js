@@ -29,7 +29,7 @@ export default {
   },
   about: {
     headline: "Personaalne lähenemine sinu stiilile",
-    text: "Olen X aastase meestejuuksuri töökogemusega, edukalt lõpetanud juuksurikooli XYZ ning osalenud mitmetel erinevatel võistlustel, kuna mulle meeldib end sellel alal aina proovile panna ja edasi areneda. Inimestes parima soengu ja stiili välja toomine valmistab mulle selle töö juures kõige enam rõõmu, ning seepärast naudin ma personaalset lähenemist igale kliendile.",
+    text: "Olen kogemustega meestejuuksur, kes on edukalt lõpetanud juuksurikooli ning osalenud mitmetel erinevatel võistlustel. Inimestes parima soengu ja stiili välja toomine valmistab mulle selle töö juures kõige enam rõõmu ning seepärast naudin ma personaalset lähenemist igale kliendile.",
     bullets: [
       "Barberi eriala juuksurikoolis Maridel",
       "Auhinnatud XYZ võistlustel",
