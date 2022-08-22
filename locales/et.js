@@ -15,7 +15,7 @@ export default {
     pill: "Avamise eripakkumised!",
     h1: ["A-Barber", "meeste juuksur Tallinnas"],
     intro:
-      " A-Barber on ainult meestele suunatud iluteenuseid pakkuv salong. Siit leiad kõik kvaliteetsed hoolitsusteenused juukselõikusest habemeajamiseni. Tere tulemast!",
+      "Sind ootab privaatsete Nõmme mändide vahel asuv professionaalne meeste barbershop. Olles spetsialiseerunud meeste juukselõikusele ja habeme hooldusele, toome sinus välja parima.",
     bookTime: "Broneeri aeg",
     writeUs: "Või kirjuta meile",
   },
@@ -28,8 +28,8 @@ export default {
     author: "Aivo Erm",
   },
   about: {
-    headline: "Tule ja lase ennast rõõmustada!",
-    text: "Olen edukalt lõpetanud juuksurikooli ning mu tööd ja tegemised on saanud positiivseid hinnanguid nii võistlustelt kui ka klientide hulgas. Mulle meeldib inimestele rõõmu valmistada neile kauneid soenguid luues.",
+    headline: "Personaalne lähenemine sinu stiilile",
+    text: "Olen X aastase meestejuuksuri töökogemusega, edukalt lõpetanud juuksurikooli XYZ ning osalenud mitmetel erinevatel võistlustel, kuna mulle meeldib end sellel alal aina proovile panna ja edasi areneda. Inimestes parima soengu ja stiili välja toomine valmistab mulle selle töö juures kõige enam rõõmu, ning seepärast naudin ma personaalset lähenemist igale kliendile.",
     bullets: [
       "Barberi eriala juuksurikoolis Maridel",
       "Auhinnatud XYZ võistlustel",
@@ -40,7 +40,8 @@ export default {
     email: "Email",
     address: "Aadress",
     howToComeLabel: "Kuidas tulla",
-    howToComeText: "Asume keldrikorrusel, peauksest vasakul. Tasuta parkimine tänaval.",
+    howToComeText:
+      "Asume keldrikorrusel, peauksest vasakul. Tasuta parkimine tänaval.",
   },
   seo: {
     title: "A-Barber meeste juuksur Tallinnas",
