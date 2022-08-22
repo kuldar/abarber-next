@@ -15,7 +15,7 @@ export default {
     pill: "Avamise eripakkumised!",
     h1: ["A-Barber", "meeste juuksur Tallinnas"],
     intro:
-      "Kõik meie teenuse aspektid on loodud selleks, et tagada teile parim väljanägemine ja enesetunne. Meie tippklassi meeste juuksurid pakuvad elamust, mis sobib igale härrasmehele. Alates hetkest, kui uksest sisse astute, tunnete end koduselt. Sel ajal, kui saate end tasuta joogiga värskendada, arutab teie kvalifitseeritud juuksur teie nõudmisi ja pakub spetsiaalselt teie naha- ja juustevajadustele kohandatud konsultatsiooni.",
+      " A-Barber on ainult meestele suunatud iluteenuseid pakkuv salong. Siit leiad kõik kvaliteetsed hoolitsusteenused juukselõikusest habemeajamiseni. Tere tulemast!",
     bookTime: "Broneeri aeg",
     writeUs: "Või kirjuta meile",
   },
@@ -24,12 +24,12 @@ export default {
     min: "min",
   },
   testimonial: {
-    text: "Albina on üks parimaid juuksureid kus ma käinud olen. Peale juukselõikust, juuksemasaashi ja habeme piiramist tunnen end mitu aastat nooremana. Kiidan tema tööd väga!",
+    text: "Albina on üks parimaid juuksureid, kelle juures ma käinud olen. Peale juukselõikust, peamassaži ja habeme piiramist tunnen end mitu aastat nooremana.",
     author: "Aivo Erm",
   },
   about: {
-    headline: "Duis id vulputate urna, diam bibendum ornare eu risus.",
-    text: "Vestibulum massa metus, lobortis et rutrum at, aliquam convallis erat. In hac habitasse platea dictumst. Proin ut mauris quis diam ornare lobortis. Pellentesque tortor velit, ornare eu risus ut, porta tincidunt tellus. Duis id vulputate urna fringilla.",
+    headline: "Tule ja lase ennast rõõmustada!",
+    text: "Olen edukalt lõpetanud juuksurikooli ning mu tööd ja tegemised on saanud positiivseid hinnanguid nii võistlustelt kui ka klientide hulgas. Mulle meeldib inimestele rõõmu valmistada neile kauneid soenguid luues.",
     bullets: [
       "Barberi eriala juuksurikoolis Maridel",
       "Auhinnatud XYZ võistlustel",
@@ -40,8 +40,7 @@ export default {
     email: "Email",
     address: "Aadress",
     howToComeLabel: "Kuidas tulla",
-    howToComeText:
-      "Asume keldrikorrusel, peauksest vasakul. Tasuta parkimine tänaval.",
+    howToComeText: "Asume keldrikorrusel, peauksest vasakul. Tasuta parkimine tänaval.",
   },
   seo: {
     title: "A-Barber meeste juuksur Tallinnas",
