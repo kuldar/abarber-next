@@ -15,7 +15,7 @@ export default {
     pill: "Avamise eripakkumised!",
     h1: ["A-Barber", "meeste juuksur Tallinnas"],
     intro:
-      "Sind ootab privaatsete Nõmme mändide vahel asuv professionaalne meeste barbershop. Olles spetsialiseerunud meeste juukselõikusele ja habeme hooldusele, toome sinus välja parima.",
+      "Sind ootab privaatsete Nõmme mändide vahel asuv professionaalne meeste barbershop. Oleme spetsialiseerunud meeste juukselõikusele ja habeme hooldusele.",
     bookTime: "Broneeri aeg",
     writeUs: "Või kirjuta meile",
   },
