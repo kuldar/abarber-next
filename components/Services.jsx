@@ -4,8 +4,8 @@ import { ArrowRightIcon } from "@heroicons/react/solid";
 import { SmallLogoMark } from "./Svg.jsx";
 import services from "../data/services";
 import et from "../locales/et";
-import ru from "../locales/ru";
-import en from "../locales/en";
+// import ru from "../locales/ru";
+// import en from "../locales/en";
 
 const Divider = () => (
   <div className="w-full h-2 border-t-2 border-b-2 opacity-30 border-stone-500" />
@@ -76,7 +76,8 @@ const FeaturedService = ({ name, duration, cost, url, image, t }) => (
 const Services = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "et" ? et : locale === "ru" ? ru : en;
+  // const t = locale === "et" ? et : locale === "ru" ? ru : en;
+  const t = et;
 
   return (
     <div className="pb-16 bg-black sm:pb-24 lg:pb-32" id={t.header.nav[0].id}>

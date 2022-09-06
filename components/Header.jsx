@@ -4,10 +4,10 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 import et from "../locales/et";
-import ru from "../locales/ru";
-import en from "../locales/en";
+// import ru from "../locales/ru";
+// import en from "../locales/en";
 
-import LanguagePicker from "./LanguagePicker";
+// import LanguagePicker from "./LanguagePicker";
 import { FacebookIcon, InstagramIcon, LogoMark, LogoText } from "./Svg";
 
 // Logo
@@ -77,7 +77,7 @@ const SocialMenu = () => (
       <FacebookIcon />
     </a>
 
-    <LanguagePicker />
+    {/* <LanguagePicker /> */}
   </div>
 );
 
@@ -100,7 +100,7 @@ const MobileSocialMenu = () => (
       <FacebookIcon />
     </a>
 
-    <LanguagePicker />
+    {/* <LanguagePicker /> */}
   </div>
 );
 
@@ -133,7 +133,8 @@ const MobileBookingButton = ({ t }) => (
 const Header = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "et" ? et : locale === "ru" ? ru : en;
+  // const t = locale === "et" ? et : locale === "ru" ? ru : en;
+  const t = et;
 
   return (
     <Popover as="header" className="relative z-10">

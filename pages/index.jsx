@@ -9,8 +9,8 @@ import Footer from "../components/Footer";
 import Seo from "../components/Seo";
 
 import et from "../locales/et";
-import ru from "../locales/ru";
-import en from "../locales/en";
+// import ru from "../locales/ru";
+// import en from "../locales/en";
 
 export default function Home() {
   const router = useRouter();
