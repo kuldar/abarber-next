@@ -77,14 +77,14 @@ const Footer = ({ t }) => {
 
               <div className="flex pt-2 space-x-4">
                 <a
-                  href="#"
+                  href="https://goo.gl/maps/aCKjuTP5mkC1ZRDX6"
                   className="flex items-center px-4 py-2 space-x-2 text-base font-medium rounded-md shadow bg-gradient-to-r from-gold-400 to-gold-500 whitespace-nowrap text-gold-900"
                 >
                   <span>Google Maps</span>
                   <ArrowRightIcon className="flex-shrink-0 w-4 h-4" />
                 </a>
                 <a
-                  href="#"
+                  href="https://ul.waze.com/ul?place=EiJMZW1taWt1IDM0LCAxMDkyMSBUYWxsaW5uLCBFc3RvbmlhIjASLgoUChIJr_3e8nqVkkYRfhOKFEcib8QQIioUChIJT4AJQnqVkkYRiyOoupNlv3A&ll=59.36569080%2C24.65640280&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location"
                   className="flex items-center px-4 py-2 space-x-2 text-base font-medium rounded-md shadow bg-gradient-to-r from-gold-400 to-gold-500 whitespace-nowrap text-gold-900"
                 >
                   <span>Waze</span>

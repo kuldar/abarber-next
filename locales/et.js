@@ -32,7 +32,7 @@ export default {
     text: "Olen kogemustega meestejuuksur, kes on edukalt lõpetanud juuksurikooli ning osalenud mitmetel erinevatel võistlustel. Inimestes parima soengu ja stiili välja toomine valmistab mulle selle töö juures kõige enam rõõmu ning seepärast naudin ma personaalset lähenemist igale kliendile.",
     bullets: [
       "Barberi eriala juuksurikoolis Maridel",
-      "Auhinnatud XYZ võistlustel",
+      "Auhinnatud eri võistlustel",
       "Iseseisvalt täiendõppinud",
     ],
   },
@@ -46,7 +46,7 @@ export default {
   seo: {
     title: "A-Barber meeste juuksur Tallinnas",
     description:
-      "Natuke pikem kirjeldus A-Barber meeste juuksurist Tallinnas ja miks siin endale aeg broneerida. Ülevaade pakutavatest teenustest ning kogemusest.",
+      "Sind ootab privaatsete Nõmme mändide vahel asuv professionaalne meeste barbershop. Oleme spetsialiseerunud meeste juukselõikusele ja habeme hooldusele.",
     siteName: "A-Barber",
   },
 };
