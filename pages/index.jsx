@@ -15,7 +15,8 @@ import en from "../locales/en";
 export default function Home() {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "et" ? et : locale === "ru" ? ru : en;
+  // const t = locale === "et" ? et : locale === "ru" ? ru : en;
+  const t = et;
 
   return (
     <>
