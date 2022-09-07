@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
@@ -131,8 +131,8 @@ const MobileBookingButton = ({ t }) => (
 );
 
 const Header = () => {
-  const router = useRouter();
-  const { locale } = router;
+  // const router = useRouter();
+  // const { locale } = router;
   // const t = locale === "et" ? et : locale === "ru" ? ru : en;
   const t = et;
 

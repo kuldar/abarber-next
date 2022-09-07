@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { ArrowRightIcon } from "@heroicons/react/solid";
 
 import { SmallLogoMark } from "./Svg.jsx";
@@ -74,8 +74,9 @@ const FeaturedService = ({ name, duration, cost, url, image, t }) => (
 );
 
 const Services = () => {
-  const router = useRouter();
-  const { locale } = router;
+  // const router = useRouter();
+  // const { locale } = router;
+  const locale = "et";
   // const t = locale === "et" ? et : locale === "ru" ? ru : en;
   const t = et;
 

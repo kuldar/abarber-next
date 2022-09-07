@@ -29,7 +29,7 @@ module.exports = {
     },
     fontFamily: {
       prompt: ["'Prompt', sans-serif"],
-      montserrat: ["'Montserrat', sans-serif"],
+      // montserrat: ["'Montserrat', sans-serif"],
     },
   },
   plugins: [

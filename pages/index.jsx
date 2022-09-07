@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -13,19 +13,20 @@ import et from "../locales/et";
 // import en from "../locales/en";
 
 export default function Home() {
-  const router = useRouter();
-  const { locale } = router;
+  // const router = useRouter();
+  // const { locale } = router;
   // const t = locale === "et" ? et : locale === "ru" ? ru : en;
   const t = et;
 
   return (
     <>
       <Seo t={t} />
-      <div
+      {/* <div
         className={`relative overflow-hidden bg-black ${
           locale === "ru" ? "font-montserrat" : "font-prompt"
         }`}
-      >
+      > */}
+      <div className={`relative overflow-hidden bg-black font-prompt`}>
         <div className="relative z-10 mb-0 md:mb-[600px]">
           <Hero t={t} />
           <Services />
