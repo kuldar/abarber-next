@@ -15,8 +15,8 @@ export default {
     pill: "Opening special deals!",
     h1: ["A-Barber", "Men's Barber in Tallinn"],
     intro:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat. Id magna aliqua ad ad non deserunt sunt.",
-    bookTime: "Book a time",
+      "A professional men's barbershop located among the private Nõmme pine forest awaits you. We specialize in men's haircuts and beard care.",
+    bookTime: "Book your appointment",
     writeUs: "Or write to us at",
   },
   services: {
@@ -24,24 +24,24 @@ export default {
     min: "min",
   },
   testimonial: {
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.",
-    author: "Judith Black",
+    text: "Albina is one of the best hairdressers’ I’ve ever visited. After a cut, head massage and beard trim I feel much younger.",
+    author: "Aivo Erm",
   },
   about: {
-    headline: "Duis id vulputate urna, diam bibendum ornare eu risus.",
-    text: "Vestibulum massa metus, lobortis et rutrum at, aliquam convallis erat. In hac habitasse platea dictumst. Proin ut mauris quis diam ornare lobortis. Pellentesque tortor velit, ornare eu risus ut, porta tincidunt tellus. Duis id vulputate urna fringilla.",
+    headline: "Personal approach to your unique style.",
+    text: "I’m an experienced barber, who has successfully completed hairdresser’s studies. I’ve participated in numerous competitions. I love bringing out the unique style with every client and that’s why you’ll always get a personal approach.",
     bullets: [
-      "Barberi eriala juuksurikoolis Maridel",
-      "Auhinnatud XYZ võistlustel",
-      "Iseseisvalt täiendõppinud",
+      "Barber major in hairdressing school Maridel",
+      "Won awards in different competitions",
+      "Regularly participating in training",
     ],
   },
   contact: {
     email: "Email",
     address: "Address",
-    howToComeLabel: "How to come",
+    howToComeLabel: "How to come?",
     howToComeText:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat.",
+      "Located on the basement floor, to the left of the main door. Free parking on the street. ",
   },
   seo: {
     title: "A-Barber men's barber in Tallinn",
