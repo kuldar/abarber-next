@@ -31,8 +31,18 @@ export default {
             en: "Classic haircut",
           },
           duration: 45,
-          price: 22,
+          price: 26,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194522&pId=672198",
+        },
+        {
+          name: {
+            et: "Zero fade / CROPP lõikus",
+            ru: "Нулевое выцветание",
+            en: "Zero fade / CROPP cut",
+          },
+          duration: 45,
+          price: 30,
+          link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194890&pId=672198",
         },
         {
           name: {
@@ -41,7 +51,7 @@ export default {
             en: "Clipper cut",
           },
           duration: 30,
-          price: 18,
+          price: 24,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194521&pId=672198",
         },
         {
@@ -51,7 +61,7 @@ export default {
             en: "Haircut & beard styling with a trimmer",
           },
           duration: 90,
-          price: 36,
+          price: 41,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194520&pId=672198",
         },
         {
@@ -61,18 +71,8 @@ export default {
             en: "Haircut & beard styling with a knife",
           },
           duration: 90,
-          price: 40,
+          price: 45,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194519&pId=672198",
-        },
-        {
-          name: {
-            et: "Zero fade / CROPP lõikus",
-            ru: "Нулевое выцветание",
-            en: "Zero fade / CROPP cut",
-          },
-          duration: 45,
-          price: 25,
-          link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194890&pId=672198",
         },
       ],
     },
@@ -90,7 +90,7 @@ export default {
             en: "Beard modeling with a trimmer",
           },
           duration: 45,
-          price: 18,
+          price: 20,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194913&pId=672198",
         },
         {
@@ -100,7 +100,7 @@ export default {
             en: "Beard modeling with a knife",
           },
           duration: 90,
-          price: 24,
+          price: 26,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194918&pId=672198",
         },
         {
@@ -139,7 +139,7 @@ export default {
             en: "Haircut for children up to 12 years old.",
           },
           duration: 30,
-          price: 15,
+          price: 20,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10710040&pId=672198",
         },
         {
@@ -148,19 +148,9 @@ export default {
             ru: "Отец с ребенком до 12 лет.",
             en: "Father with child up to 12 years old.",
           },
-          duration: 90,
-          price: 35,
+          duration: 80,
+          price: 40,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194896&pId=672198",
-        },
-        {
-          name: {
-            et: "Patside tegemine",
-            ru: "Плести косы",
-            en: "Making braids",
-          },
-          duration: 180,
-          price: 120,
-          link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10710052&pId=672198",
         },
       ],
     },
