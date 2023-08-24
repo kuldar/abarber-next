@@ -82,7 +82,7 @@ const Hero = ({ t }) => (
 
     <div className="relative pt-8 mx-auto pb-14 max-w-7xl lg:px-8 sm:pt-24 sm:pb-28 lg:pb-36">
       <div className="flex flex-col items-center max-w-md px-4 mx-auto text-center lg:mx-0 sm:max-w-2xl sm:px-6 lg:px-0 lg:text-left lg:items-start">
-        <Pill t={t} />
+        {/* <Pill t={t} /> */}
         <Title t={t} />
         <Intro t={t} />
         <Divider />
