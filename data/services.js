@@ -103,7 +103,7 @@ export default {
           price: 26,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194918&pId=672198",
         },
-        {
+        /*{
           name: {
             et: "Habeme toonimine",
             ru: "Окрашивание бороды",
@@ -112,7 +112,7 @@ export default {
           duration: 30,
           price: 20,
           link: "https://www.fresha.com/book-now/a-barber-u9mp3gca/services?lid=715646&eid=1903032&oiid=sv%3A10194930&pId=672198",
-        },
+        },*/
       ],
     },
     {
